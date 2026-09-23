@@ -3,8 +3,6 @@ import sys
 from calendar import monthrange
 from datetime import datetime
 from datetime import timedelta
-from colendary_data import DateRangeApp
-
 
 import openpyxl
 import pandas as pd
@@ -17,6 +15,9 @@ from ui_form_sh_web_reader import Ui_ShWebReaderForm
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from probuyu.read_sh_desktop_module.mini_windows import ParameterSelectionWindow
+
+from historical_data_tab import HistoricalDataTab
+
 
 
 class CheckboxTableMixin:
